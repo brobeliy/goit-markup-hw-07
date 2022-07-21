@@ -17,31 +17,32 @@
 
 <body>
   <!-- Navigation -->
-  <header>
-    <div class="container main-nav">
-      <nav class="header-nav">
-        <a href="./index.html" class="logo"> <span class="textweb">Web</span>Studio</a>
-        <ul class="list">
-          <li class="item"><a href="./index.html" class="nav-link ">Студия</a></li>
-          <li class="item"><a href="./portfolio.html" class="nav-link current">Портфолио</a></li>
-          <li class="item"><a href="#" class="nav-link">Контакты</a></li>
-        </ul>
-      </nav>
-      <ul class="list contacts">
-        <li class="item">
-          <a href="mailto:info@devstudio.com" class="contacts-header"><svg class="icon-contacts" width="16px"
-              height="12px">
-              <use href="./images/sprite.svg#icon-envelope"></use>
-            </svg>info@devstudio.com</a>
-        </li>
-        <li class="item">
-          <a href="tel:+380961111111" class="contacts-header"><svg class="icon-contacts" width="16px" height="12px">
-              <use href="./images/sprite.svg#icon-telephone"></use>
-            </svg>+38 096 111 11 11</a>
-        </li>
+<header>
+  <div class="container main-nav">
+    <nav class="header-nav">
+      <a href="./index.html" class="logo"> <span class="logo__textweb">Web</span>Studio</a>
+      <ul class="header-nav__list list">
+        <li class="header-nav__item"><a href="./index.html" class="header-nav__link">Студия</a></li>
+        <li class="header-nav__item header-nav__item--current"><a href="./portfolio.html" class="header-nav__link">Портфолио</a></li>
+        <li class="header-nav__item"><a href="#" class="header-nav__link">Контакты</a></li>
       </ul>
-    </div>
-  </header>
+    </nav>
+    <ul class="header-nav__contacts list">
+      <li class="header-nav__item telmail">
+        <a href="mailto:info@devstudio.com" class="header-nav__contact"><svg class="header-nav__icon" width="16px"
+            height="12px">
+            <use href="./images/sprite.svg#icon-envelope"></use>
+          </svg>info@devstudio.com</a>
+      </li>
+      <li class="header-nav__item telmail">
+        <a href="tel:+380961111111" class="header-nav__contact"><svg class="header-nav__icon" width="10px"
+            height="16px">
+            <use href="./images/sprite.svg#icon-telephone"></use>
+          </svg>+38 096 111 11 11</a>
+      </li>
+    </ul>
+  </div>
+</header>
   <main>
     <section class="section">
       <div class="container">
@@ -224,8 +225,7 @@
   <footer class="foot">
     <div class="container footer">
       <div class="foot-addres">
-        <a href="./index.html" class="logo-foot"><span class="textweb">Web</span><span
-            class="textstudio">Studio</span></a>
+        <a href="./index.html" class="logo logo-foot"><span class="logo__textweb">Web</span><span class="logo__textstudio">Studio</span></a>
         <address>
           <ul class="list adressa">
             <li class="item">
@@ -275,7 +275,7 @@
         </ul>
       </div>
       <div class="subs-form">
-        <h3 class="title">Подпишитесь на рассылку</h3>
+        <strong class="subs-title">Подпишитесь на рассылку</strong>
         <form class="form-footer">
           <div class="position-subscribe">
             <input type="email" name="subscribe" id="subscribe" placeholder="E-mail">

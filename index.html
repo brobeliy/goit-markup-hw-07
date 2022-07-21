@@ -20,22 +20,22 @@
   <header>
     <div class="container main-nav">
       <nav class="header-nav">
-        <a href="./index.html" class="logo"> <span class="textweb">Web</span>Studio</a>
-        <ul class="list">
-          <li class="item"><a href="./index.html" class="nav-link current">Студия</a></li>
-          <li class="item"><a href="./portfolio.html" class="nav-link">Портфолио</a></li>
-          <li class="item"><a href="#" class="nav-link">Контакты</a></li>
+        <a href="./index.html" class="logo"> <span class="logo__textweb">Web</span>Studio</a>
+        <ul class="header-nav__list list">
+          <li class="header-nav__item header-nav__item--current"><a href="./index.html" class="header-nav__link">Студия</a></li>
+          <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link">Портфолио</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="list contacts">
-        <li class="item">
-          <a href="mailto:info@devstudio.com" class="contacts-header"><svg class="icon-contacts" width="16px"
+      <ul class="header-nav__contacts list">
+        <li class="header-nav__item header-nav__item--retreat">
+          <a href="mailto:info@devstudio.com" class="header-nav__contact"><svg class="header-nav__icon" width="16px"
               height="12px">
               <use href="./images/sprite.svg#icon-envelope"></use>
             </svg>info@devstudio.com</a>
         </li>
-        <li class="item">
-          <a href="tel:+380961111111" class="contacts-header"><svg class="icon-contacts" width="16px" height="12px">
+        <li class="header-nav__item header-nav__item--retreat">
+          <a href="tel:+380961111111" class="header-nav__contact"><svg class="header-nav__icon" width="10px" height="16px">
               <use href="./images/sprite.svg#icon-telephone"></use>
             </svg>+38 096 111 11 11</a>
         </li>
@@ -322,8 +322,7 @@
   <footer class="foot">
     <div class="container footer">
       <div class="foot-addres">
-        <a href="./index.html" class="logo-foot"><span class="textweb">Web</span><span
-            class="textstudio">Studio</span></a>
+        <a href="./index.html" class="logo foot__logo"><span class="logo__textweb">Web</span>Studio</a>
         <address>
           <ul class="list adressa">
             <li class="item">
@@ -419,9 +418,9 @@
 
         <div class="form-field last">
           <label class="policy" for="policy"> 
-            <input class="checkbox" type="checkbox" name="policy" id="policy"><span class="icon-c"></span><p class="text">
+            <input class="checkbox" type="checkbox" name="policy" id="policy"><span class="icon-c"></span><span class="text">
              Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="#">Условия
-              договора</a></p></label>
+              договора</a></span></label>
         </div>
 
         <button class="btn-send" type="submit"> Оставить заявку</button>
