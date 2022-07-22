@@ -389,46 +389,48 @@
 
 
   <!-- Модалка -->
+  <!-- backdrop -->
   <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <form class="form">
-        <b class="title">Оставьте свои данные, мы вам перезвоним</b>
-        <div class="form-field">
-          <label for="user-name">Имя</label>
-          <input class="form-input" type="text" name="user-name" id="user-name">
-          <svg class="icon" width="12px" height="12px">
+    <div class="modal bakcdrop__modal">
+        <!-- FORM -->
+      <form class="form modal__form">
+        <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
+        <div class="field form__field">
+          <label class="field__label" for="user-name">Имя</label>
+          <input class="field__input" type="text" name="user-name" id="user-name">
+          <svg class="field__icon" width="12px" height="12px">
             <use href="./images/sprite.svg#icon-name"></use>
           </svg>
         </div>
-        <div class="form-field">
-          <label for="telephone">Телефон</label>
-          <input class="form-input" type="tel" name="telephone" id="telephone">
-          <svg class="icon" width="13px" height="13px">
+        <div class="field form__field">
+          <label class="field__label" for="telephone">Телефон</label>
+          <input class="field__input" type="tel" name="telephone" id="telephone">
+          <svg class="field__icon" width="13px" height="13px">
             <use href="./images/sprite.svg#icon-tel"></use>
           </svg>
         </div>
-        <div class="form-field">
-          <label for="mail">Почта</label>
-          <input class="form-input" type="email" name="mail" id="mail">
-        <svg class="icon" width="15px" height="12px">
+        <div class="field form__field">
+          <label class="field__label" for="mail">Почта</label>
+          <input class="field__input" type="email" name="mail" id="mail">
+        <svg class="field__icon" width="15px" height="12px">
           <use href="./images/sprite.svg#icon-mail"></use>
         </svg>
         </div>
-        <div class="form-field">
-          <label for="comment">Коментарий</label>
-          <textarea class="form-input comment" name="comment" id="comment" rows="10" placeholder="Your comment"></textarea>
+        <div class="field form__field">
+          <label class="field__label" for="comment">Коментарий</label>
+          <textarea class="field__input field__input--comment" name="comment" id="comment" rows="10" placeholder="Your comment"></textarea>
         </div>
 
-        <div class="form-field last">
-          <label class="policy" for="policy"> 
-            <input class="checkbox" type="checkbox" name="policy" id="policy"><span class="icon-c"></span><span class="text">
-             Соглашаюсь с рассылкой и принимаю <a class="policy-link" href="#">Условия
+        <div class="field form__field field--last">
+          <label class="policy field__policy" for="policy"> 
+            <input class="policy__checkbox" type="checkbox" name="policy" id="policy"><span class="policy__icon"></span><span class="policy__text">
+             Соглашаюсь с рассылкой и принимаю <a class="policy__link" href="#">Условия
               договора</a></span></label>
         </div>
 
-        <button class="btn-send" type="submit"> Оставить заявку</button>
-        <button class="backdrop-close" data-modal-close>
-          <svg class="icon" width="30px" height="30px">
+        <button class="btn" type="submit"> Оставить заявку</button>
+        <button class="close backdrop__close" data-modal-close>
+          <svg class="close__icon" width="30px" height="30px">
             <use href="./images/sprite.svg#icon-closebackdrop">
             </use>
           </svg>
