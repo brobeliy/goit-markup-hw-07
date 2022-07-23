@@ -1,18 +1,4 @@
 
-.features__title--visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0; 
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .features__list {
   display: flex;
   line-height: 1.71;
@@ -29,6 +15,22 @@
   text-transform: uppercase;
   line-height: 1.14;
   color: $main-text-color;
+
+
+  &--visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0; 
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 }
 
 .features__pic {

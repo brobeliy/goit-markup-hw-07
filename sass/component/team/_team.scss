@@ -12,18 +12,16 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: $main-color-project;
-}
 
-.team__card + .team__card {
+  &+&  {
   margin-left: 30px;
+}
 }
 
 .info {
   padding: 30px 0;
   text-align: center;
 }
-
-
 
 .info__name {
   font-weight: 500;

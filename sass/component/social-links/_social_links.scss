@@ -10,12 +10,12 @@
   border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-links__link:focus,
-.social-links__link:hover {
+    &:focus,
+    &:hover {
   background-color: $secondary-color-project;
   color: $main-color-project;
+}
 }
 
 .social-links__icon {
@@ -25,7 +25,3 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-links__icon:focus,
-.social-links__icon:hover {
-  fill: $main-color-project;
-}

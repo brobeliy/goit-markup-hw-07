@@ -14,13 +14,15 @@
 
 .social-links__icon--backgorund {
   fill: currentColor;
+
+&:focus,
+&:hover {
+  color: $main-color-project;
+}
+
 }
 
 .foot__socials {
   display: inline-flex;
 }
 
-.social-links__icon--backgorund:focus,
-.social-links__icon--backgorund:hover {
-  color: $main-color-project;
-}
