@@ -644,6 +644,7 @@ header {
 }
 
 .category__btn {
+  margin-top: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
